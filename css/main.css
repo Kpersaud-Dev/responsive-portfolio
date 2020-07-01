@@ -106,7 +106,9 @@ textarea {
    body {
      font-family: 'Roboto', sans-serif;
      font-size: 1em;
-     color: #095156;
+     color: white;
+     margin: 0;
+     padding: 0;
    }
 
    h2 {
@@ -145,42 +147,75 @@ textarea {
    }
 
    .content-wrapper {
-     width: 90%;
+     
    }
 
    /* ----------------- Base Header - Footer Styles -----------------*/
 
-   header,
-   footer {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-   }
 
    /* Header Styles */
 
    header {
-     background: url('../img/desk-coffee.png');
+     background: url('../img/simple-desk.png');
      background-size: cover;
+     height: 50vh;
+     
    }
 
    header .content-wrapper {
      display: flex;
-     justify-content: space-between;
-     align-items: flex-end;
-     flex-flow: row wrap;
-   }
-   header h1 {
-     width: 100%;
-     font-family: 'Teko', sans-serif;
-     color: #663300;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column wrap;
+     flex-direction: column;
+     margin: 0;
    }
 
-   header p {
-     width: 30%;
-     font-size: .750em;
+   header .title-text {
+     
    }
+
+   header h1 {
+     font-family: 'Teko', sans-serif;
+     color:white;
+     display: flex;
+     width: 100%;
+     
+   }
+
+   header .sub-text {
+     font-size: .750em;
+     
+   }
+
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    color: white;
+  }
+
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar-links li {
+    list-style: none;
+    font-size: .5rem;
+  }
+
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: .25rem;
+    display: block;
+  }
+
+  .navbar-links li:hover {
+    background-color: #555;
+}
 
    /* My-Portfolio */
 
@@ -188,7 +223,7 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
-
+     background-color: #353b37;
    }
 
    .my-portfolio .content-wrapper {
@@ -262,6 +297,10 @@ textarea {
      text-align: center;
      background-color: #095156;
      color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
 
    }
 
