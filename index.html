@@ -6,10 +6,16 @@
   <title>Kevin Persaud | Portfolio</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <!-- Yanone Kaffeesatz -->
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+  <!-- Source Code Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <!-- Rajdhani -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+  <!-- El Messiri -->
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+
+
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,6 +25,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- Fontawesome Kit -->
   <script src="https://kit.fontawesome.com/d60ff32e4b.js" crossorigin="anonymous"></script>
 
   <meta name="theme-color" content="#fafafa">
@@ -30,38 +37,46 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-            <header>
-              <nav class="navbar">                      
-                <a href="#" class="toggle-button">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </a>
-                <div class="navbar-links">
-                  <ul>
-                      <li><a href="#">My Portfolio</a></li>
-                      <li><a href="#">About Me</a></li>
-                      <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-              </nav>
-                <div class="content-wrapper"> 
+            <header class="main-header">
+                <div class="header-content"> 
                   <div class="title-text">
                     <h1 class="title">Kevin Persaud</h1>
-                      <p class="sub-title">Web Development Simplified
-                      </p>
+                      <h2 class="sub-title">Web Development Simplified
+                      </h2>                    
                   </div>
-                                    
+                  <nav class="navbar">
+                    <div class="burger">
+                      <div class="line1"></div>
+                      <div class="line2"></div>
+                      <div class="line3"></div>
+                    </div>   
+                    <div class="navbar-links">
+                      <ul>
+                        <li>
+                          <a href="#">Home</a>
+                        </li>
+                        <li>
+                          <a href="my-portfolio/portfolio.html">My Portfolio</a>
+                        </li>
+                        <li>
+                          <a href="#about_me_link">About Me</a>
+                          
+                        </li>
+                        <li>
+                          <a href="#contact_link">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>          
                 </div>
             </header>
             <main>
-
                   <section class="my-portfolio">
-                    <div class="content-wrapper">
-                        <h3>My Portfolio</h3>
-                        <article>
+                    <h3>My Portfolio</h3>
+                    <div class="portfolio content-wrapper">
+                        <article class="portfolio-article">
                           <figure>
-                            <a href="206-unplugged/index.html" target="BLANK"> <img src="img/unplugged.png" id="afiasco-img" alt="Unplugged Screenshot" />
+                            <a href="projects/206-unplugged/index.html" target="BLANK"> <img src="img/unplugged.png" id="afiasco-img" alt="Unplugged Screenshot" />
                             </a>
                           </figure>
                           <div class="project">
@@ -70,20 +85,20 @@
                           </div>
                         </article>
 
-                          <article>
+                          <article class="portfolio-article">
                             <figure>
-                              <a href="101-rogue-project/index.html" target="BLANK"> <img src="img/rogue-pickings-thumbnail.png" id="rogue-img" alt="Rogue Pickings Screenshot" />
+                              <a href="projects/101-rogue-project/index.html" target="BLANK"> <img src="img/rogue-pickings-thumbnail.png" id="rogue-img" alt="Rogue Pickings Screenshot" />
                               </a>
                             </figure>
                             <div class="project">
                               <h4>Rogue Pickings Project</h4>
-                                  <h5>HTML & CSS Responsive Website from Photoshop Design Comp</h5>
+                                  <h5>HTML & CSS Responsive Website</h5>
                             </div>
                           </article>
 
-                          <article>
+                          <article class="portfolio-article">
                             <figure>
-                              <a href="adhoc/index.html" target="BLANK"><img src="img/adhoc-image.png" id="adhoc-img" alt="Adhoc Screenshot"/>
+                              <a href="projects/adhoc/index.html" target="BLANK"><img src="img/adhoc-image.png" id="adhoc-img" alt="Adhoc Screenshot"/>
                               </a>
                             </figure>
                             <div class="project">
@@ -92,9 +107,9 @@
                             </div>
                           </article>
 
-                        <article>
+                        <article class="portfolio-article">
                           <figure>
-                            <a href="101-website-project/index.html" target="BLANK"> <img src="img/jubilee-austen-thumbnail.png" id="jubilee-img" alt="Jubilee Screenshot" />
+                            <a href="projects/101-website-project/index.html" target="BLANK"> <img src="img/jubilee-austen-thumbnail.png" id="jubilee-img" alt="Jubilee Screenshot" />
                             </a>
                           </figure>
                           <div class="project">
@@ -103,21 +118,45 @@
                           </div>
                         </article>
 
+                        <article class="portfolio-article">
+                          <figure>
+                            <a href="projects/band-website/index.html" target="BLANK"> <img src="img/band-website.png" alt="Band Screenshot" />
+                            </a>
+                          </figure>
+                          <div class="project">
+                              <h4>Band Website</h4>
+                                  <h5>HTML/CSS/Javascript with Shopping Cart</h5>
+                          </div>
+                        </article>
 
+                        <article class="portfolio-article">
+                          <figure>
+                            <a href="projects/barbershop-website/index.html" target="BLANK"> <img src="img/barbershop.png" alt="Barbershop Screenshot" />
+                            </a>
+                          </figure>
+                          <div class="project">
+                              <h4>Barbershop Website</h4>
+                                  <h5>HTML/CSS Responsive Website</h5>
+                          </div>
+                        </article>
                     </div> <!-- My Portfolio content wrapper ends here -->
+                    <div class="portfolio content-wrapper">
+                      <a class="see-more"href="my-portfolio/portfolio.html">See More</a>
+                      </div>
                   </section>
 
 
                     <section class="about-me">
+                      <a id="about_me_link" href="#"></a>
                             <h3>About Me</h3>
                         <div class="content-wrapper">
                           <article>
                             <figure>
-                              <img src="img/pro-pic.png" id="photo" alt="Professional Photo"/>
+                              <img class="my-picture" src="img/headshot.jpeg" alt="Professional Photo"/>
                             </figure>
                             <div class="my-description">
-                              <h4>I enjoy developing webs.</h4>
-                                  <p>I started web development because I wanted to help others in their goals, as well as help myself. After leaving the financial industry, I really wanted to make a change and help small businesses and entrepreneurs in their endeavors. Seeing how web development can help everyone inspires me every day, and I can't wait to help you with your next project!
+                              <h4>I enjoy developing websites</h4>
+                                  <p class="main-description">I started web development because I wanted to help others in their goals, while performing work that fulfills me. After leaving the financial industry, I really wanted to make a change and help businesses and entrepreneurs in their endeavors. Seeing how web development can help everyone inspires me every day, and I can't wait to help you with your next project!
                                   </p>
                             </div>
                           </article>
@@ -125,8 +164,9 @@
                     </section>
                 </main>
             <footer>
-              <h3>Let's Connect</h3>
-                <div class="content-wrapper">
+              <a id="contact_link" href="#"></a>
+              <h3>Let's Connect</h3>              
+                <div class="footer-content content-wrapper">
                           <address class="contact-me">
                               <h4>Call me</h4>
                                <p>845-826-2120<br>
