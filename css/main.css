@@ -328,8 +328,9 @@ img {
 
 .about-me {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
   background-color: black;
   color: white;
 }
@@ -530,7 +531,7 @@ footer {
   /* About Me */
 
   .about-me {
-    height: 100vh;
+    padding-bottom: 2em;
   }
 
   .about-me h4 {
